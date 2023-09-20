@@ -1,0 +1,15 @@
+{
+	"name": "Quant_Moedas",
+	"plugin-id": "Text",
+	"sid": 781821855422032,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Âncora",
+			"sid": 851730762558834
+		}
+	],
+	"effectTypes": []
+}

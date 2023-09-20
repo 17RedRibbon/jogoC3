@@ -1,0 +1,15 @@
+{
+	"name": "Parabens",
+	"plugin-id": "Text",
+	"sid": 299859814426819,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Âncora",
+			"sid": 860173773371828
+		}
+	],
+	"effectTypes": []
+}

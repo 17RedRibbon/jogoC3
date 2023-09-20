@@ -1,0 +1,130 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "contadorMoedas",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 364867481750682
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Jogador",
+					"sid": 736625753334407,
+					"parameters": {
+						"object": "FimDaLinha"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Jogador",
+					"sid": 124837495490772,
+					"parameters": {
+						"x": "96",
+						"y": "368"
+					}
+				}
+			],
+			"sid": 396678843524684
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Jogador",
+					"sid": 816668073351480,
+					"parameters": {
+						"object": "Moeda"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Moeda",
+					"sid": 171365357073441
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 820899316283100,
+					"parameters": {
+						"variable": "contadorMoedas",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Quant_Moedas",
+					"sid": 947787879109392,
+					"parameters": {
+						"text": "\"Moedas: \"&contadorMoedas"
+					}
+				}
+			],
+			"sid": 413340591799017
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 587949375483785,
+					"parameters": {
+						"variable": "contadorMoedas",
+						"comparison": 0,
+						"value": "16"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Parabens",
+					"sid": 155416607460393,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 929893257275006
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Jogador",
+					"sid": 356546963789608,
+					"parameters": {
+						"object": "Inimigo"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Jogador",
+					"sid": 932741727820561,
+					"parameters": {
+						"x": "96",
+						"y": "368"
+					}
+				}
+			],
+			"sid": 844179717160890
+		}
+	],
+	"sid": 870048722995336
+}
